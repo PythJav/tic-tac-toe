@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vw;
+}
+#gameBoard{
+
+    display: grid;
+    justify-content: center;
+    width: 300px;
+    height:300px;
+    grid-template-columns: repeat(3,auto);
+}
+
+.activeCell{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.circle:before{
+
+    content:"o";
+    /* height:100%; */
+    font-size: 100px;
+   
+}
+
+.x:before{
+    content:"X";
+    height:100%;
+    font-size: 100px;
+   
+}
